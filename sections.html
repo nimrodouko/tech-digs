@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Website</title>
+  <style>
+    /* Styling for navigation and sections */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav {
+      text-align: center;
+      background-color: #444;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+      background-color: #f2f2f2;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Single Page Website</h1>
+  </header>
+  <nav>
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+    <a href="#section4">Section 4</a>
+  </nav>
+  <section id="section1">
+    <h2>Section 1</h2>
+    <p>This is the content of Section 1.</p>
+  </section>
+  <section id="section2">
+    <h2>Section 2</h2>
+    <p>This is the content of Section 2.</p>
+  </section>
+  <section id="section3">
+    <h2>Section 3</h2>
+    <p>This is the content of Section 3.</p>
+  </section>
+  <section id="section4">
+    <h2>Section 4</h2>
+    <p>This is the content of Section 4.</p>
+  </section>
+</body>
+</html>
+<script>
+    // Smooth scrolling when clicking navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+  
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+  
+        window.scrollTo({
+          top: targetSection.offsetTop - nav.offsetHeight,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+Explanation of JavaScript:
+Query Selector: document.querySelectorAll('nav a') selects all <a> elements within the navigation (nav).
+Event Listener: Adds a click event listener to each navigation link (anchor).
+Prevent Default: e.preventDefault(); prevents the default behavior of the anchor tag, which is jumping to a new page.
+Smooth Scroll: window.scrollTo() scrolls the window to the target section smoothly. Adjustments are made to account for the fixed navigation height (nav.offsetHeight) to ensure the target section is correctly positioned.
+Notes:
+Ensure the id values of sections (section1, section2, etc.) match the href values of the navigation links (#section1, #section2, etc.).
+Adjust the CSS styles (background-color, font-family, etc.) and content (<h2>, <p>) to fit your design and content needs.
+Test your single-page website across different devices and browsers to ensure functionality and responsiveness.
+By following these steps, you can create a simple yet effective single-page website with internal navigation links that smoothly scroll to different sections within the same page.
+  

@@ -1,0 +1,199 @@
+   /* Custom styles for sidebar and main content */
+   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height of viewport */
+    width: 250px; /* Width of the sidebar */
+    background-color: rgb(30, 30, 30); /* Dark background color */
+    color: orange; /* Text color */
+    padding-top: 20px; /* Padding at the top */
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 90px; /* Margin between links */
+    border: 1px solid orange; /* Orange border */
+    text-decoration: none;
+    text-align: center;
+    color: orange; /* Orange text color */
+    background-color: transparent; /* Transparent background */
+    border-radius: 20px; /* Rounded corners */
+    transition: transform 0.5s ease-in-out; /* Smooth hover effect */
+}
+
+.sidebar a:first-child {
+    margin-top: 100px; /* Adjust the top margin for the first link */
+}
+
+.sidebar a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    background-color: orange; /* Orange background on hover */
+    color: rgb(30, 30, 30); /* Dark text color on hover */
+}
+
+.main-content {
+  padding: 20px; /* Padding inside the main content */
+  background-color: rgb(30, 30, 30); /* Dark background color */
+  color: orange; /* Text color */
+  margin-left: 250px; /* Same as sidebar width for alignment */
+}
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  header h1{
+    text-align: center;
+    color: orange;
+    
+  }
+  header img{
+    height: 170px;
+    width: 170px;
+    float:left;
+  }
+  .logo img {
+    width: 100%; /* Make the image width 100% of its container */
+    height: 500px; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves as a block element */
+}
+
+.card {
+  width: 300px; /* Adjust width as needed */
+  display: inline-flex;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+}
+.card-img-top {
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgb(58, 57, 57);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+textarea {
+  height: 150px;
+}
+footer{
+  background-color: #333;
+  color:orange;
+  
+  margin-top: 50px;
+  padding: 10px 0;
+
+}
+footer i {
+  margin-right: 50px;
+ 
+}
+p{
+  color:rgb(138, 93, 5);
+}
+h5{
+  color: orange;
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #fdd835;
+}
+.rating label:hover:before,
+.rating label:hover ~ label:before,
+.rating input:checked ~ label:before {
+  content: "\2605";
+}
+.feedback {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color:rgb(58, 57, 57);
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.feedback p{
+  color: orange;
+}
+.feedback-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.feedback-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+.user-feedback {
+  background-color:rgb(58, 57, 57);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: orange;
+}
+.user-feedback .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.user-feedback .user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-feedback .user-info .user-name {
+  font-weight: bold;
+}
+.user-feedback .user-rating {
+  color: #fdd835;
+  font-size: 20px;
+}
+.user-feedback .user-comment {
+  margin-top: 10px;
+}
+.user-feedback .user-comment p {
+  margin: 0;
+  color: orange;
+}
